@@ -1,0 +1,194 @@
+/*
+Projeto::after
+
+Box model
+box sizing
+Flexbox
+
+
+reset de propriedades*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500&display=swap');
+
+/* cabeçalho */
+
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+body{
+    background-color: #efefef;
+    /* font-family: 'Jost', sans-serif; */
+    font-family:cursive ;
+    color: #a6a6a6;
+    font-weight: 300;
+
+    /* cabeçalho */
+    
+}
+header{
+    background-color: #474747;
+}
+
+.header-box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;/*linha*/
+    align-items: center;/*coluna*/
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+
+}
+nav a {
+     padding: 30px 25px;
+     font-family: 'Jost', sans-serif;
+     color: #efefef;
+     font-weight: 400;
+     text-decoration: none;
+     transition: background-color 1s;
+
+}
+
+nav a:hover{
+    background-color: #999999
+}
+
+
+
+h1{
+    font-family: 'Jost', sans-serif;
+    color: #efefef;
+    font-weight: 400;
+    align-self: center;
+}
+
+h1 span{
+    font-weight: 600;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+/* main */
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 20px;
+    align-items: stretch;
+    background-color: transparent;
+    max-width: 1200px;
+    width: 80%
+    
+}
+
+section#conteudo{
+    
+    width: 75%;
+    background-color:white;
+    padding-bottom: 50px;
+}
+
+aside{
+    width: 22%;
+}
+
+/* imagem */
+
+#lapis{
+    width: 100%;
+}
+
+h2{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p{
+    margin: 10px;
+}
+
+/* Aside */
+.aside-box{
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.aside-box h3{
+    text-align: center;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #efefef;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+.aside-box form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    
+}
+
+.aside-box form input{
+    width: 85%;
+    height: 40px;
+    border: 1px solid #a6a6a6;
+}
+
+.aside-box form button{
+    background-color: #4e4e4e;
+    border: 1px solid #a6a6a6;
+    padding: 5px;
+}
+
+.aside-box form button{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.aside-box ul{
+    /* border: 1px solid cornflowerblue; */
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aside-box ul li{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.aside-box ul li a{
+    text-decoration: none;
+    color: #a6a6a6;
+}
+
+.aside-box ul li a:hover{
+    text-decoration: underline;
+}
+
+#email-market{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+}
